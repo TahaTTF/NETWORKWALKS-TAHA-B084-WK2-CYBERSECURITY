@@ -6,11 +6,6 @@
 **Week:** 2 — Footprinting, Reconnaissance & Network Scanning  
 **Status:** W2-PM1 and W2-PM5 completed; final report prepared.
 
-## Overview
-
-This repository documents my Week 2 hands-on cybersecurity internship activities. I completed one elective module (**W2-PM1**) and the mandatory network scanning module (**W2-PM5**), then prepared a final assessment report (**W2-PM-FINAL**).
-
-The exercises focused on information gathering and host discovery. **No exploitation, credential attacks, or denial-of-service testing was performed.**
 
 ## Completed modules
 
