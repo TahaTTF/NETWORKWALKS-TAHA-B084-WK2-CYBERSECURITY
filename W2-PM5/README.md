@@ -87,20 +87,3 @@ Opened Zenmap's **Topology** tab, reviewed the three responding hosts, and expor
 ![Zenmap topology](images/task7_pm2.png)
 
 **Learning:** Zenmap's visualization summarizes scan observations; it is not necessarily a physical wiring diagram.
-
-## Summary
-
-The authorized Ping Scan completed successfully and found **3 responding hosts out of 256 addresses**, in **3.30 seconds**. IP and MAC details were collected and the topology was exported. No port scanning or exploitation was performed in this module.
-
-## Evidence checklist
-
-- [x] Zenmap installed and opened
-- [x] Local subnet identified
-- [x] Ping Scan completed
-- [x] Three hosts counted and documented
-- [x] MAC address information collected
-- [x] Topology exported as PDF
-- [ ] Add four **redacted** PNG screenshots to `images/`
-- [ ] Optionally place the redacted topology PDF in this folder
-
-**Privacy:** Redact IPs and MAC addresses in the PNG images themselves before publishing. Keep any unredacted originals private.
