@@ -109,21 +109,4 @@ dnsrecon -d networkwalks.com
 
 ![DNSRecon evidence](images/task6_pm1.png)
 
-## Key observations
 
-1. Domain registration, DNS, HTTP, and website technologies can be investigated using several complementary tools.
-2. **Passive vs active:** WHOIS queries registry data; WhatWeb, cURL, and WAFW00F contact the website directly; DNS queries contact DNS infrastructure.
-3. ModSecurity was fingerprinted, but no bypass or exploitation was attempted.
-4. No confirmed exploitable vulnerability was established by this reconnaissance exercise.
-
-## Evidence checklist
-
-- [x] Task 1 command and result
-- [x] Task 2 command and result
-- [x] Task 3 command and result
-- [x] Task 4 command and result
-- [x] Task 5 command and result
-- [x] Task 6 command and result
-- [ ] Add six **redacted** PNG screenshots to `images/`
-
-**Privacy:** Before publishing, redact any IP octet you wish to hide, cookies, unique verification tokens, and other sensitive output in the screenshots themselves.
