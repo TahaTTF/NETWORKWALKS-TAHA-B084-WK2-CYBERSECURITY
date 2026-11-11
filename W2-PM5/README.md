@@ -14,7 +14,7 @@ Identify the local network configuration, discover responding hosts, document IP
 | Task | Activity | Result |
 |---|---|---|
 | 1 | Install and launch Zenmap | Completed |
-| 2 | Identify local network using `ipconfig` | Wi-Fi subnet `192.168.100.X/24` (masked) |
+| 2 | Identify local network using `ipconfig` | Wi-Fi subnet `192.168.X.X/24` (masked) |
 | 3 | Run Zenmap Ping Scan | Completed |
 | 4 | Count responding hosts | **3 hosts up** |
 | 5 | Identify responding IPs | 3 local IPv4 addresses (masked) |
@@ -33,7 +33,7 @@ Installed Zenmap on Windows and opened the application successfully.
 ipconfig
 ```
 
-**Observed:** Wi-Fi IPv4 address `192.168.100.X`, subnet mask `255.255.255.0`, gateway `192.168.100.X`. The actual network prefix was `/24`.
+**Observed:** Wi-Fi IPv4 address `192.168.X.X`, subnet mask `255.255.255.0`, gateway `192.168.X.X`. The actual network prefix was `/24`.
 
 ![Network configuration](images/task2_pm2.png)
 
@@ -42,7 +42,7 @@ ipconfig
 **Actual scan profile:** Zenmap **Ping scan**. The following command is **redacted for publication** and is not meant to be copied as a runnable command:
 
 ```text
-nmap -sn 192.168.100.X/24
+nmap -sn 192.168.X.X/24
 ```
 
 `-sn` performs host discovery without a port scan.
@@ -56,9 +56,9 @@ nmap -sn 192.168.100.X/24
 
 | Host | Partially masked IP | Interpretation |
 |---|---|---|
-| Host 1 | `192.168.100.X` | Default gateway, likely router |
-| Host 2 | `192.168.100.X` | Another responding device; exact identity unverified |
-| Host 3 | `192.168.100.X` | Local Windows PC |
+| Host 1 | `192.168.X.X` | Default gateway, likely router |
+| Host 2 | `192.168.X.X` | Another responding device; exact identity unverified |
+| Host 3 | `192.168.X.X` | Local Windows PC |
 
 > Not every connected device necessarily responds to host-discovery probes. The scan results are not a complete asset inventory.
 
@@ -74,9 +74,9 @@ ipconfig /all
 
 | Host | Partially masked MAC |
 |---|---|
-| Host 1 | `98:A9:42:XX:XX:XX` |
-| Host 2 | `98:A9:42:XX:XX:XX` |
-| Host 3 (local PC) | `04:56:E5:XX:XX:XX` |
+| Host 1 | `98:X:X:XX:XX:XX` |
+| Host 2 | `98:X:X:XX:XX:XX` |
+| Host 3 (local PC) | `04:X:X:XX:XX:XX` |
 
 **Learning:** The first three MAC bytes may identify an organizational vendor prefix, but the prefix does not prove the exact device model. The remaining bytes are hidden for privacy.
 
