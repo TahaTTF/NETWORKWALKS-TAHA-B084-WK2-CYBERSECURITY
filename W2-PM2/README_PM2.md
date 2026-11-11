@@ -53,11 +53,3 @@ site:edu filetype:pdf "probability theory" lecture notes
 ## Challenge
 
 The Exploit-DB GHDB webpage returned an HTTP 502 origin-server timeout during the exercise. Alternative public search queries were used to complete the learning objectives.
-
-## Evidence
-
-Save sanitized screenshots in `images/PM2/`. Remove identifiable individuals, private camera addresses, credentials, and sensitive location details before publishing.
-
-## Conclusion
-
-This module demonstrated how search-engine indexing can reveal resources and why organizations should review publicly exposed content and access controls.
