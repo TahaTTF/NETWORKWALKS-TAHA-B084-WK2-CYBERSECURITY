@@ -51,8 +51,6 @@ NETWORKWALKS-TAHA-B084-WK2-CYBERSECURITY/
     └── README.md
 ```
 
-> Screenshot files shown above are **expected filenames**, not included in this starter package. Add your own redacted screenshots to the appropriate `images/` folders.
-
 ## Main outcomes
 
 **PM1:** Identified GoDaddy domain registration, HostGator DNS, Apache / WordPress website fingerprints, DNS and email records, and a WAF fingerprint consistent with ModSecurity.
@@ -61,8 +59,8 @@ NETWORKWALKS-TAHA-B084-WK2-CYBERSECURITY/
 
 ## Privacy and ethical use
 
-- Publicly shared IPv4 addresses are partially masked, e.g. `192.168.100.X`.
-- MAC addresses are half-masked, e.g. `04:56:E5:XX:XX:XX`.
+- Publicly shared IPv4 addresses are partially masked, e.g. `192.168.X.X`.
+- MAC addresses are half-masked, e.g. `04:X:X:XX:XX:XX`.
 - **Redact the screenshot pixels themselves** before uploading. Markdown masking does not hide information embedded in PNGs.
 - Public IP addresses, DNS records, and hostnames may be visible in the original tool output; review all screenshots for identifiers and session cookies.
 - The sample authorization letter supplied with training materials is **not** an authorization letter issued to me. Only scan systems and networks you own or have explicit permission to assess.
