@@ -107,16 +107,6 @@ theHarvester -d microsoft.com -l 50 -b all
 - **API authentication:** Understanding why some data sources require credentials.
 - **Evidence collection:** Recording commands, results, limitations, and screenshots.
 
-## 7. Conclusion
-
-Both W2-PM4 tasks were completed. The Baidu-only search returned no findings, whereas the multi-source search produced numerous domain-related results. This exercise demonstrated the value of comparing OSINT sources and documenting limitations such as missing API keys. No discovered host was treated as a confirmed vulnerability.
-
-## 8. Ethical use and publication safety
-
-This exercise was limited to information gathering for educational purposes. Do not perform active scans or testing against third-party systems without authorization.
-
-**Before making this repository public:** Review all screenshots and logs. The multi-source output may contain internal-looking or non-public infrastructure names. Redact such details from image pixels, not just from Markdown text. Do not upload API keys, credentials, private data, or unfiltered bulk reconnaissance output.
-
 ## References
 
 - [theHarvester — GitHub](https://github.com/laramies/theHarvester)
