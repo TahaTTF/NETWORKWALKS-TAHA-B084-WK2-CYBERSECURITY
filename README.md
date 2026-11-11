@@ -5,15 +5,16 @@
 **Batch:** B084  
 **Program:** Cybersecurity & Ethical Hacking  
 **Week:** 2 — Footprinting, Reconnaissance & Network Scanning  
-**Status:** W2-PM1, W2-PM2, W2-PM3 and W2-PM5 completed; final report prepared.
+**Status:** W2-PM1, W2-PM2, W2-PM3, W2-PM4 and W2-PM5 completed; final report prepared.
 
 ## Completed modules
 
 | Module | Focus | Outcome | Documentation |
 |---|---|---|---|
 | W2-PM1 | Footprinting with six Kali Linux tools | 6/6 tasks completed | [PM1 notes](W2-PM1/README.md) |
-| W2-PM2 | Google Hacking Database (GHDB) and Google Dorking | 2/2 tasks completed: 10 camera findings and 10 mathematics PDF listings | [PM2 notes](W2-PM2/README.md) |
-| W2-PM3 | Footprinting with Maltego | 2/2 tasks completed: installation and email reconnaissance | [PM3 notes](W2-PM3/README.md) |
+| W2-PM2 | Google Hacking Database (GHDB) and Google Dorking | 2/2 tasks completed: 10 camera findings and 10 mathematics PDF listings | [PM2 notes](W2-PM2/README_PM2.md) |
+| W2-PM3 | Footprinting with Maltego | 2/2 tasks completed: installation and email reconnaissance | [PM3 notes](W2-PM3/README_PM3.md) |
+| W2-PM4 | OSINT reconnaissance using theHarvester | 2/2 tasks completed: Baidu and all-source reconnaissance | [PM4 notes](W2-PM4/README_PM4.md) |
 | W2-PM5 | Network scanning using Zenmap | 7/7 tasks completed | [PM5 notes](W2-PM5/README.md) |
 | W2-PM-FINAL | Penetration testing report | LaTeX report prepared | [Final report folder](W2-PM-FINAL/) |
 
@@ -35,6 +36,12 @@
 - Maltego installation and configuration on Windows
 - Domain and email reconnaissance using Maltego transforms
 - Visualization of relationships between domains, email addresses, people and websites
+- Installation verification and usage of theHarvester on Kali Linux
+- Public email and subdomain reconnaissance using theHarvester
+- Single-source reconnaissance using Baidu
+- Multi-source OSINT reconnaissance using the `all` option
+- Understanding API key requirements, authentication errors and source limitations
+- Comparing reconnaissance results across different public data sources
 
 ## Repository structure
 
@@ -58,6 +65,14 @@ NETWORKWALKS-TAHA-B084-WK2-CYBERSECURITY/
 │   └── images/
 │       ├── img1.png
 │       └── img2.png
+├── W2-PM4/
+│   ├── README_PM4.md
+│   └── images/
+│       ├── img1.png
+│       ├── img2.png
+│       ├── img3.png
+│       ├── img4.png
+│       └── img5.png
 ├── W2-PM5/
 │   ├── README.md
 │   └── images/
@@ -77,6 +92,13 @@ NETWORKWALKS-TAHA-B084-WK2-CYBERSECURITY/
 
 **PM3:** Installed and configured Maltego Graph Desktop 4.14.0 on Windows. Created a domain entity for `networkwalks.com` and executed an email-related transform, identifying the publicly associated address `info@networkwalks.com`. Additionally explored person-to-website relationships using Maltego's graphical visualization capabilities.
 
+**PM4:** Used theHarvester 4.10.1 on Kali Linux to perform OSINT reconnaissance against `microsoft.com`. Completed two tasks:
+
+- **Task 1 — Baidu reconnaissance:** Executed `theHarvester -d microsoft.com -l 1000 -b baidu`. The command completed successfully but returned no email addresses, IP addresses, people or hosts.
+- **Task 2 — Multi-source reconnaissance:** Executed `theHarvester -d microsoft.com -l 50 -b all`. Discovered numerous publicly indexed Microsoft subdomains. Hudson Rock reported 44 hosts, and a DNS fallback mechanism reported 14 subdomains. Some sources produced warnings due to missing or invalid API keys.
+
+**Key lesson:** Multi-source OSINT can provide more comprehensive reconnaissance results than a single search engine. However, results depend on data availability, source restrictions and API authentication. Discovered subdomains do not automatically indicate security vulnerabilities.
+
 **PM5:** Completed a host-discovery scan on an authorized local `/24` network: **256 addresses scanned, 3 hosts reported up, 3.30 seconds elapsed**. Exported a Zenmap topology PDF.
 
 ## Privacy and ethical use
@@ -87,6 +109,8 @@ NETWORKWALKS-TAHA-B084-WK2-CYBERSECURITY/
 - Public IP addresses, DNS records, and hostnames may be visible in the original tool output; review all screenshots for identifiers and session cookies.
 - Camera-related findings are documented for educational purposes. Direct camera endpoints, private surveillance feeds and authentication details should not be republished without authorization.
 - Google Dorking and Maltego reconnaissance were performed for educational OSINT practice. Public availability does not automatically imply permission to access or redistribute information.
+- theHarvester reconnaissance was limited to publicly available information for educational purposes. No exploitation, unauthorized access or credential testing was performed.
+- API keys, credentials and sensitive infrastructure information should not be published in screenshots or repository files.
 - The sample authorization letter supplied with training materials is **not** an authorization letter issued to me. Only scan systems and networks you own or have explicit permission to assess.
 
 ## References
@@ -96,6 +120,8 @@ NETWORKWALKS-TAHA-B084-WK2-CYBERSECURITY/
 - [NetworkWalks](https://networkwalks.com/)
 - [Google Hacking Database — Exploit Database](https://www.exploit-db.com/google-hacking-database)
 - [Maltego](https://www.maltego.com/)
+- [theHarvester — GitHub](https://github.com/laramies/theHarvester)
 
 ---
+
 *Prepared by Taha Chebil — NetworkWalks Internship, Batch B084 (November 2026).*
