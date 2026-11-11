@@ -21,7 +21,7 @@ Use Maltego to visualize relationships between public entities and perform basic
 3. Observed one returned email entity: `info@networkwalks.com`.
 4. Verified the result visually as a connection between the domain and the email address in the graph.
 
-**Evidence:** `img1.png` — domain-to-email relationship.
+![domain-to-emailrelationship](images/img1.png)
 
 ## Additional exploration — Person and related websites
 
@@ -29,7 +29,7 @@ Use Maltego to visualize relationships between public entities and perform basic
 - Explored a graph showing multiple associated website entities, including social platforms and professional sites.
 - This graph demonstrates entity relationships, **not independently verified ownership or identity**. Associations from transforms should be checked before being treated as facts.
 
-**Evidence:** `img2.png` — person-to-websites graph.
+![domain-to-email_relationship](images/img2.png)
 
 ## Lessons learned
 
@@ -39,17 +39,7 @@ Use Maltego to visualize relationships between public entities and perform basic
 - **OSINT validation:** A suggested link is a lead, not proof of a relationship.
 - **Privacy and scope:** Limit investigations to authorized targets and public data.
 
-## Evidence folder
-
-```text
-images/
-└── PM3/
-    ├── img1.png
-    └── img2.png
-```
 
 ## Conclusion
 
 Maltego helped organize reconnaissance results visually. The main domain investigation returned a public contact email, and the additional person graph demonstrated how relationship mapping works.
-
-**Reference:** NetworkWalks, *W2-PM3 — Footprinting with Maltego*, Tasks 1–2.
